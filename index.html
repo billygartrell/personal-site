@@ -18,7 +18,7 @@
       <p class="descriptor">I'm Billy. Working on a new site. 
         <a href="https://www.instagram.com/billygartrell/" target="_blanl" title="Instagram">Sometimes on Instagram</a>. 
         <a href="https://twitter.com/billygartrell" title="Twitter" target="_blank">Currently sick of Twitter</a>. 
-        <a href="#" onclick="showPaladin()" >Former paladin</a>. <img id="paladin-sprite" src="img/sprite-animation.gif"></p>
+        <a href="#" id="paladin-button" onclick="showPaladin()" >Former paladin</a>. <img id="paladin-sprite" src="img/sprite-animation.gif"></p>
     </div>
 
     <div class="container">
@@ -50,6 +50,9 @@
       //Paladin Show Script
       function showPaladin() {
         document.getElementById("paladin-sprite").style.display = "inline-block";
+        document.getElementById("paladin-button").style.textDecoration = "none";
+        document.getElementById("paladin-button").style.cursor = "default";
+        document.getElementById("paladin-button").style.color = "#212529";
       }
         
     </script>

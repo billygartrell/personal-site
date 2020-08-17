@@ -1,3 +1,15 @@
 body {
     font-family:'Source Code Pro', monospace;
 }
+
+.header{
+    margin-top:30px;
+}
+
+a{
+    text-decoration:underline;
+}
+
+#paladin-sprite{
+    display:none;
+}

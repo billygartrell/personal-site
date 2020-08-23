@@ -18,8 +18,8 @@
       <p class="descriptor">I'm Billy. Working on a new site. 
         <a href="https://www.instagram.com/billygartrell/" target="_blank" title="Instagram">Sometimes on Instagram</a>. 
         <a href="https://twitter.com/billygartrell" title="Twitter" target="_blank">Currently sick of Twitter</a>. 
-        <a href="#" id="paladin-button" onclick="showPaladin()" >Former paladin</a>. <img id="paladin-sprite" src="img/sprite-animation.gif">
         <a href="https://www.worriesmusic.com" title="Worries Band" target="_blank">Admittadly, still an emo kid.</a>
+        <a href="#" id="paladin-button" onclick="showPaladin()" >Former paladin</a>. <img id="paladin-sprite" src="img/sprite-animation.gif">
       </p>
     </div>
 
@@ -36,7 +36,7 @@
 
       //Random Color Generator
       const colors = randomColor({
-        count: 3,
+        count: 5,
         luminosity: 'dark'
         });
 
@@ -48,6 +48,9 @@
 
       document.querySelector(".descriptor a:nth-child(3)")
         .style.color = colors[2];
+
+      document.querySelector(".descriptor a:nth-child(4)")
+        .style.color = colors[3];
 
       //Paladin Show Script
       function showPaladin() {

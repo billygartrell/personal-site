@@ -10,16 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
-    <title>Billy Gartrell</title>
+    <title>Billy Gartrell - Designer, Musician, Human</title>
   </head>
   <body>
-    <div class="container header">
+    <div id="main-content" class="container header">
       <h1>Hi there.</h1>
-      <p class="descriptor">I'm Billy. Working on a new site. 
-        <a href="https://www.instagram.com/billygartrell/" target="_blank" title="Instagram">Sometimes on Instagram</a>. 
-        <a href="https://twitter.com/billygartrell" title="Twitter" target="_blank">Currently sick of Twitter</a>. 
-        <a href="https://www.worriesmusic.com" title="Worries Band" target="_blank">Admittadly, still an emo kid.</a>
-        <a href="#" id="paladin-button" onclick="showPaladin()" >Former paladin</a>. <img id="paladin-sprite" src="img/sprite-animation.gif">
+      <p>I'm Billy. Working on a new definition.</p><br>
+      <h2 class="">Concrete</h2>
+      <p>
+        <a href="https://www.instagram.com/billygartrell/" target="_blank" title="Instagram">Sometimes on Instagram</a>.<br>
+        <a href="https://twitter.com/billygartrell" title="Twitter" target="_blank">Currently sick of Twitter</a>.<br>
+        <a href="#" id="paladin-button" onclick="showPaladin()" >Former paladin</a>. <img id="paladin-sprite" src="img/sprite-animation.gif"><br>
+        <a href="https://worries.bandcamp.com/" title="Worries Bandcamp" target="_blank">Musician</a>.<br>
+      </p><br>
+      <h2 class="">Thinking About</h2>
+      <p class="inactive">
+        The ethics of technology and the "Slow Tech"&nbsp;movement.<br>
+        Final Fantasy XI and how punishing design constraints built a better&nbsp;community.<br>
+        Aggressive music and the promotion of self&nbsp;love.<br>
+        Navigating the world as healthily as&nbsp;possible.
       </p>
     </div>
 
@@ -33,24 +42,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.min.js"></script>
     <script>
-
-      //Random Color Generator
-      const colors = randomColor({
-        count: 5,
-        luminosity: 'dark'
-        });
-
-      document.querySelector(".descriptor a:nth-child(1)")
-        .style.color = colors[0];
-
-      document.querySelector(".descriptor a:nth-child(2)")
-        .style.color = colors[1];
-
-      document.querySelector(".descriptor a:nth-child(3)")
-        .style.color = colors[2];
-
-      document.querySelector(".descriptor a:nth-child(4)")
-        .style.color = colors[3];
 
       //Paladin Show Script
       function showPaladin() {

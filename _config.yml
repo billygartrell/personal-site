@@ -23,7 +23,7 @@ email: billygartrell@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Billy Gartrell is a New York based graphic designer and musician.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.billygartrell.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: billygartrell
 github_username:  billygartrell
 

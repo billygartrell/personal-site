@@ -12,6 +12,7 @@ In a past life, I managed creative marketing campaigns for retailers across the 
 
 This website is currently under construction as of 6/19/2021. Thanks for being here and come back soon.
 
+![Photo of Billy](../assets/images/billy-photo.jpg)
 
 <!-- ### Credits
 This website is built using Jekyll, a static site generator. It's set with Source Sans Pro, Work Sans, and Belle fonts. All are from Google Fonts.  -->

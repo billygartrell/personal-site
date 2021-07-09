@@ -41,19 +41,25 @@ a:hover{
         width:100%;
         float:none;
     }
+
+    .post-title{
+        font-size:30px;
+        font-weight:700;
+    }
  }
 
  @media (min-width: 768px) { 
+
+    .site-nav {
+        line-height: 85px;
+    }
     
     
     .post-link{
         font-weight:400;
     }
     
-    .post-title{
-        font-size:30px;
-        font-weight:700;
-    }
+    
     
     
     

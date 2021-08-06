@@ -8,6 +8,14 @@ h2{
     margin-bottom:20px;
 }
 
+#footer .row {
+    margin-bottom:none;
+}
+
+#project-container .row{
+    margin-bottom:50px;
+}
+
 #header{
     padding:50px 10px;
 }
@@ -16,7 +24,7 @@ h2{
     width:60px;
     height:auto;
     display:inline-block;
-    float:right;
+    float: right;
 }
 
 #description{
@@ -31,4 +39,28 @@ h2{
     margin-top:10px;
     font-size:14px;
     font-style:italic;
+}
+
+.col img {
+    vertical-align: middle;;
+}
+
+/*These are place holders for now otherwise images are too small,
+and get observed all at once because website doesn't have content
+
+*Animation solution*
+maybe add custom width and height for each specific image so that
+the loading doesn't push your text further down and images don't 
+randomly pop up as someone is reading
+
+*No animation solution*
+or instead of going through the trouble of setting each images 
+width height create low resolution of images and load them initially
+and have lazy load replace
+*/
+
+[data-img]{
+    min-width: 400px;
+    min-height: 400px;
+    background-color: gray;
 }

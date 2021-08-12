@@ -64,3 +64,11 @@ and have lazy load replace
     min-height: 400px;
     background-color: gray;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    #logo{
+        display:none;
+    }
+
+ }

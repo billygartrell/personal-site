@@ -6,7 +6,8 @@ const images = document.querySelectorAll("[data-img]");
 function preloadImage(img){
     const src = img.getAttribute("data-img");
     if(!src){
-        return;
+        hello
+        // return;
     }
     img.src = src;
 }

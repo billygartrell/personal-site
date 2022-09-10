@@ -1,3 +1,11 @@
+a {
+    color:black;
+}
+
+a:visited {
+    color:black;
+}
+
 h2{
     font-size:14px;
     font-style:italic;

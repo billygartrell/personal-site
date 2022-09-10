@@ -45,6 +45,36 @@ h2{
     vertical-align: middle;;
 }
 
+/* ------------------------- links page -------------------------------*/
+
+#links button {
+    width:100%;
+    background-color:#fff;
+    padding:12px 0px;
+    border:0;
+}
+
+.descriptor {
+    font-size:12px;
+}
+
+.category {
+    height:35px;
+    width:35px;
+    background-color:#fff;
+    border-radius: 100%;
+    padding:8px;
+}
+
+.icon-bandcamp {
+    background-image: url("img/bandcamp.svg");
+    background-position: center center;
+}
+
+
+/* --------------------------------------------------------------------*/
+
+
 /*These are place holders for now otherwise images are too small,
 and get observed all at once because website doesn't have content
 
@@ -62,7 +92,7 @@ and have lazy load replace
 [data-img]{
     min-width: 400px;
     min-height: 400px;
-    background-color: gray;
+    background-color: pink;
 }
 
 /* Small devices (landscape phones, 576px and up) */

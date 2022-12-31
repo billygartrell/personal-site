@@ -118,8 +118,6 @@ td{
 }
 
 
-
-
 .footnote{
     font-size:12px;
     font-weight: normal;
@@ -177,8 +175,13 @@ h1, h2, h3, h4 {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .highlight-number{
-        font-size:1em;
+        font-size:1.5em;
         line-height: 1;
+    }
+
+    .highlight-table td{
+        text-align: center;
+        padding:10px !important;
     }
 
     .intro-image{
@@ -197,10 +200,9 @@ h1, h2, h3, h4 {
         font-size:2em;
         line-height: 1;
     }
-
     .highlight-table td{
         text-align: center;
-        padding:10px !important;
+        padding:20px !important;
     }
 }
 
@@ -212,8 +214,13 @@ h1, h2, h3, h4 {
     }
 
     .highlight-number{
-        font-size:2em;
+        font-size:3em;
         line-height: 1;
+    }
+
+    .highlight-table td{
+        text-align: center;
+        padding:30px !important;
     }
 
     .intro-image{

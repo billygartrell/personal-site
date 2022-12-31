@@ -1,0 +1,49 @@
+body{
+    font-family: 'Courier New', Courier, monospace; color:#000;
+}
+
+.container{
+    max-width:375px;
+}
+
+.divider{
+    border-top:1px dashed black; 
+    border-bottom:1px dashed black; 
+    margin-bottom:48px;
+}
+
+.divider p{
+    margin-top:16px;
+}
+
+#links button {
+    width:100%;
+    background-color:#fff;
+    padding:12px 0px;
+    border:0;
+}
+
+.descriptor {
+    font-size:12px;
+}
+
+.category {
+    position:absolute;
+    height:35px;
+    width:35px;
+    background-color:#fff;
+    border-radius: 100%;
+    padding:8px;
+    top:-15px; 
+    left:-18px;
+}
+
+.link-container{
+    position:relative;
+    border:1px solid black; margin-bottom:32px;
+}
+
+.icon-bandcamp {
+    background-image: url("img/bandcamp.svg");
+    background-position: center center;
+}

@@ -1,3 +1,7 @@
+body{
+    color:#2C2C2C;
+}
+
 td{
     font-weight:bold;
 }
@@ -161,10 +165,6 @@ h1, h2, h3, h4 {
     text-decoration: underline;
 }
 
-.highlight-number{
-    font-size:4em;
-    line-height: 1;
-}
 
 .introduction{
     max-width:700px;
@@ -183,13 +183,21 @@ h1, h2, h3, h4 {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-    
+    .highlight-number{
+        font-size:1.5em;
+        line-height: 1;
+    }
  }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .image-card{
         position: relative;
+    }
+
+    .highlight-number{
+        font-size:2em;
+        line-height: 1;
     }
 }
 
@@ -198,6 +206,11 @@ h1, h2, h3, h4 {
     .image-card{
         position: absolute;
         width: 100%;
+    }
+
+    .highlight-number{
+        font-size:3em;
+        line-height: 1;
     }
 }
 

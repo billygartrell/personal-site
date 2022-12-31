@@ -1,0 +1,208 @@
+td{
+    font-weight:bold;
+}
+
+.description{
+    font-weight: normal;
+}
+
+.red{
+    background-color:#E03A00;
+    color:white;
+}
+
+.red-inverse{
+    color:#E03A00;
+    border-color:#E03A00;
+
+}
+
+.spoiler-red{
+    background-color:#E03A00;
+}
+
+.pink{
+    background-color:#E00036;
+    color:white;
+}
+
+.pink-inverse{
+    color:#E00036;
+    border-color:#E00036;
+
+}
+
+.spoiler-pink{
+    background-color:#E00036;
+}
+
+
+.dark-blue{
+    background-color: #3F558C;
+    color:white;
+
+}
+
+.dark-blue-inverse{
+    color:#3F558C;
+    border-color:#3F558C;
+}
+
+
+.spoiler-dark-blue{
+    background-color:#3F558C;
+}
+
+.light-blue{
+    background-color:#0067E0;
+    color:white;
+}
+
+.light-blue-inverse{
+    color:#0067E0;
+    border-color:#0067E0;
+
+}
+
+.spoiler-light-blue{
+    background-color:#0067E0;
+}
+
+.teal{
+    background-color:#15A098;
+    color:white;
+}
+
+.teal-inverse{
+    color:#15A098;
+    border-color:#15A098;
+
+}
+
+.spoiler-teal{
+    background-color:#15A098;
+}
+
+.green{
+    background-color:#20734B;
+    color:white;
+}
+
+.green-inverse{
+    color:#20734B;
+    border-color:#20734B;
+
+}
+
+.spoiler-green{
+    background-color:#20734B;
+}
+
+.maroon{
+    background-color:#931C39;
+    color:white;
+}
+
+.maroon-inverse{
+    color:#931C39;
+    border-color:#931C39;
+
+}
+
+.spoiler-maroon{
+    background-color:#931C39;
+}
+
+
+
+
+.footnote{
+    font-size:12px;
+    font-weight: normal;
+    margin-left:6px;
+    font-style: italic;
+}
+
+
+
+.td-title{
+    width: 40%;
+}
+
+.td-genre {
+    width:20%;
+}
+
+
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+.white{
+    color:white;
+}
+
+.highlight-table{
+}
+
+.highlight-table td{
+    text-align: center;
+    padding:30px !important;
+}
+
+.highlight-table a{
+    color:white;
+    text-decoration: underline;
+}
+
+.highlight-table a:visited{
+    color:white;
+    text-decoration: underline;
+}
+
+.highlight-number{
+    font-size:4em;
+    line-height: 1;
+}
+
+.introduction{
+    max-width:700px;
+    margin:60px auto;
+}
+
+.conclusion{
+    max-width:700px;
+    margin:60px auto;
+}
+
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .image-card{
+        position: relative;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .image-card{
+        position: absolute;
+        width: 100%;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { ... }

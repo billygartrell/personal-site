@@ -147,13 +147,6 @@ h1, h2, h3, h4 {
     color:white;
 }
 
-.highlight-table{
-}
-
-.highlight-table td{
-    text-align: center;
-    padding:30px !important;
-}
 
 .highlight-table a{
     color:white;
@@ -184,9 +177,14 @@ h1, h2, h3, h4 {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .highlight-number{
-        font-size:1.5em;
+        font-size:1em;
         line-height: 1;
     }
+
+    .intro-image{
+        width:100%;
+    }
+    
  }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -199,6 +197,11 @@ h1, h2, h3, h4 {
         font-size:2em;
         line-height: 1;
     }
+
+    .highlight-table td{
+        text-align: center;
+        padding:10px !important;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -209,8 +212,12 @@ h1, h2, h3, h4 {
     }
 
     .highlight-number{
-        font-size:3em;
+        font-size:2em;
         line-height: 1;
+    }
+
+    .intro-image{
+        width:60%;
     }
 }
 

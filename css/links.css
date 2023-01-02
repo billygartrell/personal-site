@@ -6,6 +6,19 @@ body{
     max-width:375px;
 }
 
+p{
+    margin:0;
+    padding:0;
+}
+
+a {
+    color:black;
+}
+
+a:visited{
+    color:black;
+}
+
 .divider{
     border-top:1px dashed black; 
     border-bottom:1px dashed black; 
@@ -13,7 +26,17 @@ body{
 }
 
 .divider p{
-    margin-top:16px;
+    margin:20px 0px;
+}
+
+
+.intro-info{
+    margin-bottom: 32px;
+    text-align: center; 
+}
+
+#links{
+    text-align:center;
 }
 
 #links button {
@@ -23,11 +46,12 @@ body{
     border:0;
 }
 
+
 .descriptor {
     font-size:12px;
 }
 
-.category {
+.category-icon {
     position:absolute;
     height:35px;
     width:35px;
@@ -38,7 +62,7 @@ body{
     left:-18px;
 }
 
-.link-container{
+.item{
     position:relative;
     border:1px solid black; margin-bottom:32px;
 }
@@ -46,4 +70,21 @@ body{
 .icon-bandcamp {
     background-image: url("img/bandcamp.svg");
     background-position: center center;
+}
+
+.link-info{
+    padding:20px;
+    color:black;
+}
+
+.link-info:hover{
+    color:black;
+}
+
+.link-border{
+    border-right:1px solid black;
+}
+
+.link-group{
+    border-top:1px solid black;
 }

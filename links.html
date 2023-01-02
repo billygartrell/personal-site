@@ -15,43 +15,53 @@
 
   <body>
 
+    <!-- Site Container-->
     <div class="container p-4">
+
         <!-- Intro Area -->
-        <div id="intro-info" class="container" style="margin-bottom:32px;">
+        <div class="intro-info">
             <img src="img/computer.png" class="img-fluid p-4" alt="Sketchy illustration of an old CRT computer, keyboard, and mouse.">
-            <p class="text-center">here are some projects i'm working&nbsp;on:</p>
+            <p>here are some projects i'm working&nbsp;on:</p>
         </div>
 
         <!-- Links -->
-        <div id="links" class="container text-center">
+        <div id="links">
 
             <!-- 2022 Year In Review -->
-            <div class="link-container">
-                <div class="category">
+            <div class="item">
+                <!-- Category Icon -->
+                <div class="category-icon">
                     <i class="bi bi-star-fill"></i>
                 </div>
-                <a href="2022-review.html" title="2022 year in review" target="_blank"><button>2022 year in review</button></a>
+                <!-- Link Single-->
+                <div class="link-info">
+                    <a href="2022-review.html" title="2022 year in review" target="_blank"><button>2022 year in review</button></a>
+                </div>
             </div>
         
             <!-- Divider -->
-
             <div class="divider">
                 <p>other stuff:</p>
             </div>
 
             <!-- Keep Me Warm -->
-            <div class="link-container">
-                <div class="category">
+            <div class="item">
+                <div class="category-icon">
                     <i class="bi bi-music-note-beamed"></i>
                 </div>
-                <div style="padding:20px;">
-                    <p style="margin:0; padding:0;">keep me warm<br>
+
+                <!-- Link Info -->
+                <div class="link-info">
+                    <p>keep me warm<br>
                     <span class="descriptor">(my new pop song with atlas jack)</span></p>
                 </div>
-                <div class="row g-0" style="border-top:1px solid black">
-                    <div class="col" style="border-right:1px solid black;">
+                <!-- Link Group -->
+                <div class="row g-0 link-group">
+                    <!-- Link -->
+                    <div class="col link-border">
                         <a href="https://open.spotify.com/track/3vBN2hT4TaPg59hCY80LN4?si=de802e4a57f544d4" title="Spotify Song Link" target="_blank"><button><i class="bi bi-spotify"></i> spotify</button></a>
                     </div>
+                    <!-- Link-->
                     <div class="col">
                         <a href="https://music.apple.com/us/album/keep-me-warm-feat-billy-gartrell/1637932833?i=1637932834" title="Apple Music Song Link" target="_blank"><button><i class="bi bi-apple"></i> music</button></a>
                     </div>
@@ -60,28 +70,29 @@
 
             <!-- Illustration -->
 
-            <div class="link-container">
-                <div class="category">
+            <div class="item">
+                <div class="category-icon">
                     <i class="bi bi-pen-fill"></i>                    
                 </div>
-                <div class="row g-0">
+                <!-- Link -->
+                <div class="link-info">
                     <a href="https://www.billygartrell.com" title="Illustration" target="_blank"><button>illustration</button></a>
                 </div>
             </div>
 
             <!-- Worries -->
-            <div class="link-container">
-                <div class="category">
+            <div class="item">
+                <div class="category-icon">
                     <i class="bi bi-music-note-beamed"></i>
                 </div>
-                <div style="padding:20px;">
-                    <p style="margin:0; padding:0;">worries<br><span class="descriptor">(indie punk for over 10 years)</span></p>
+                <div class="link-info">
+                    <p>worries<br><span class="descriptor">(indie punk for over 10 years)</span></p>
                 </div>
-                <div class="row g-0" style="border-top:1px solid black">
-                    <div class="col" style="border-right:1px solid black;">
+                <div class="row g-0 link-group">
+                    <div class="col link-border">
                         <a href="https://open.spotify.com/artist/3AzjK40JembVLZUh90slUW?si=ASfsDWevTQOMg8cKmyALqg" title="Spotify" target="_blank"><button><i class="bi bi-spotify"></i></button></a>
                     </div>
-                    <div class="col" style="border-right:1px solid black;">
+                    <div class="col link-border">
                         <a href="https://music.apple.com/us/artist/worries/987922983" title="Apple Music" target="_blank"><button><i class="bi bi-apple"></i></button></a>
                     </div>
                     <div class="col">
@@ -99,7 +110,6 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="js/lazyload.js"></script>
 
   </body>
 </html>

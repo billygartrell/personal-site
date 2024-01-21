@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Running - 2023 Year In Review</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="../css/2023.css" rel="stylesheet">
+
+    <!-- Handbars Inclusion / Template -->
+    <script src="../js/vendor/handlebars-v4.7.6.js"></script>
+    <script id="running-template" type="text/x-handlebars-template">
+      {{#each info}}
+      <!-- Entry -->
+      <tr class="{{type}}">
+        <td>{{number}}</td>
+        <td>{{month}}</td>
+        <td>{{type}}</td>
+        <td>{{distance}}</td>
+        <td>{{time}}</td>
+        <td>{{pace}}</td>
+      </tr>
+      {{/each}}
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L941PEQFK3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-L941PEQFK3');
+    </script>
+  </head>
+  
+  <body>
+    <!-- Navigation -->
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="">Navigation</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a href="intro.html" class="nav-item home"><img src="../img/logo-house.png" width="35px">2023</a>
+          <a href="books.html" class="nav-item red-inverse">Books</a>
+          <a href="bread.html" class="nav-item orange-inverse">Bread</a>
+          <a href="concerts.html" class="nav-item yellow-inverse">Concerts</a>
+          <a href="restaurants.html" class="nav-item lime-inverse">Food</a>
+          <a href="movies.html" class="nav-item green-inverse">Movies</a>
+          <a href="music.html" class="nav-item blue-inverse">Music</a>
+          <a href="running.html" class="nav-item indigo selected">Running</a>
+          <a href="series.html" class="nav-item violet-inverse">Series</a>
+        </div>
+      </nav>
+    </div>
+    <!-- Header -->
+    <div class="container">
+      <div class="header indigo px-5">
+        <img class="img-fluid" src="../img/2023/running-hero.jpg">
+      </div>
+    </div>
+
+    <!-- Thoughts -->
+    <div class="container thoughts indigo-inverse pe-lg-5 py-5 px-5">
+      <div class="row">
+        <div class="col-12">
+          <h3>Thoughts</h3>
+          <p>Damn, I guess I'm a runner now. I started in 2022 after deciding to take my physical health more seriously. 2022 was mostly trying to figure out how to work it into my daily life. 2023 was where the habit really paid off. Turns out I ran more than a 3rd of the days in the year! That's pretty amazing to me. I didn't expect that level of frequency.<br><br>
+          I intentionally tried to increase my distances and times during the summer. After going pretty hard for a month, my left calf started to feel some pain. After that, I really slowed down and tried to take things a bit more incrementally than I was doing. I feel a little behind because of this. I was hoping to have run further distances by now, but I'd rather make sure I don't damage my body. My goal is to run the NYC Marathon while we still live here. It's one of my favorite days of the year and makes me feel proud to live in the city.<br><br>
+          I ran my first <i>intentional</i> 5k this year at the verrrrry end of the year. It was okay! I'm not sure if I feel like I need to run races, but I do like the stats that you get from it. Turns out I'm in the bottom half of all racers, all men, and men my age who were running that day. I like knowing that benchmark.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Stats -->
+    <div class="container indigo-inverse table-container">
+      <table class="table highlight-table">
+        <tbody>
+          <tr>
+            <td class="highlight"><span id="numberOfItemsContainer" class="highlight-number"></span><br>Runs Total</td>
+            <td class="highlight"><span class="highlight-number">5.09 mi</span><br>Furthest Run</td>
+            <td class="highlight"><span class="highlight-number">8"08'</span><br>Fastest Mile</td>
+            <td class="highlight"><span class="highlight-number">9"21'</span><br>Fastest 2 Mile</td>
+            <td class="highlight"><span class="highlight-number">10"11'</span><br>Fastest 3 Mile</td>
+
+          </tr>
+        </tbody>
+      </table>
+    
+
+      <!-- Table -->
+      <div class="table-responsive">
+        <table class="table">
+          <thead class="table indigo">
+            <tr>
+              <th>#</th>
+              <th>Month</th>
+              <th>Type</th>
+              <th>Distance</th>
+              <th>Time</th>
+              <th>Pace</th>
+            </tr>
+          </thead>
+
+          <tbody id="running-list" class="indigo-inverse">
+          </tbody>
+      
+        </table>  
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Handlebars Template Handling -->
+    <script src="../js/running.js" type="text/javascript"></script>
+    <script src="../js/runningTemplateScript.js" type="text/javascript"></script>
+
+    
+  </body>
+</html>

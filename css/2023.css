@@ -228,6 +228,7 @@ h1, h2, h3, h4 {
 .navbar-toggler{
     font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
     font-size:12px;
+    border:none;
 }
 
 .nav a{

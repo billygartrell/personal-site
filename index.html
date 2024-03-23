@@ -7,40 +7,169 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="css/links.css" rel="stylesheet">
 
-    <title>Billy Gartrell</title>
+    <title>Billy's Links</title>
   </head>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L941PEQFK3"></script>
-  <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L941PEQFK3"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-L941PEQFK3');
-  </script>
+    </script>
 
   <body>
-    <div style="margin-left:200px; margin-top:200px;">
-        :)
-        <br><br>   
-        <a href="links.html" title="links">links</a>   <br>
-        <a href="illustration.html" title="illustration">illustration</a><br> 
-        <a href="https://rovont.neocities.org/music" title="music" target="_blank">music</a>   <i class="bi bi-arrow-up-right-square"></i>
+
+    <!-- Site Container-->
+    <div class="container p-4">
+
+        <!-- Intro Area -->
+        <div class="intro-info">
+            <img src="img/computer.png" class="img-fluid p-4" alt="Sketchy illustration of an old CRT computer, keyboard, and mouse.">
+            <h1>billy's links <br>across the web:</h1>
+        </div>
+
+        <!-- Links -->
+        <div id="links">
+
+            <!-- Recent -->
+            <div class="section">
+                <div class="divider">
+                    <h2>recent</h2>
+                </div>
+
+                <div class="item">
+                    <div class="category-icon">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=3RvHaUFK8mo" target="_blank" title="Video of Volena's Summer of Roses - Live"><button type="button" class="btn btn-primary">Volena: Summer of Roses<br><span class="description">Live Performance</span></button></a>
+                </div>
+
+                <div class="item">
+                    <div class="category-icon">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <a href="https://www.billygartrell.com/2023/intro" target="_blank" title="Billy's 2023 Year End Website"><button type="button" class="btn btn-primary">2023 Year in Review</button></a>
+                </div>
+            </div>
+
+            <!-- Older -->
+            <div class="divider">
+                <h2>other things</h2>
+            </div>
+
+            <div class="section">
+                <h3>~*~*~~*~&nbsp;&nbsp;music&nbsp;&nbsp;~*~*~*~</h3>
+
+                <!-- Worries -->
+                <div class="category">
+                    <div class="item">
+                        <div class="category-icon">
+                            <i class="bi bi-music-note-beamed"></i>
+                        </div> 
+                        <button class="btn btn-expand" type="button" data-bs-toggle="collapse" data-bs-target="#worriesExpand" aria-expanded="false" aria-controls="worriesExpand">
+                        Worries<br><span class="description">indie punk for over 10 years</span>
+                        </button>
+                    </div>
+                    <div class="collapse" id="worriesExpand">
+                        <div class="card card-body">
+                            <a href="https://worries.bandcamp.com/" target="_blank" title="Worries on Bandcamp"><button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#worriesExpand" aria-expanded="false" aria-controls="worriesExpand">
+                                <img src="img/bandcamp.svg" height="20px" width="20px"> Bandcamp</span>
+                            </button></a>
+                            <a href="https://open.spotify.com/artist/3AzjK40JembVLZUh90slUW?si=ASfsDWevTQOMg8cKmyALqg" target="_blank" title="Worries on Spotify"><button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#worriesExpand" aria-expanded="false" aria-controls="worriesExpand">
+                                <i class="bi bi-spotify"></i> Spotify</span>
+                            </button></a>
+                            <a href="https://music.apple.com/us/artist/worries/987922983" target="_blank" title="Worries on Apple Music"><button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#worriesExpand" aria-expanded="false" aria-controls="worriesExpand">
+                                <i class="bi bi-apple"></i> Apple Music</span>
+                            </button></a>
+                            <a href="https://www.instagram.com/worriespa/" target="_blank" title="Worries on Instagram"><button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#worriesExpand" aria-expanded="false" aria-controls="worriesExpand">
+                                <i class="bi bi-instagram"></i> Instagram</span>
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volena -->
+                <div class="category">
+                    <div class="item">
+                        <div class="category-icon">
+                            <i class="bi bi-music-note-beamed"></i>
+                        </div> 
+                        <button class="btn btn-expand" type="button" data-bs-toggle="collapse" data-bs-target="#volenaExpand" aria-expanded="false" aria-controls="volenaExpand">
+                        Volena<br><span class="description">introspective indie</span>
+                        </button>
+                    </div>
+                    <div class="collapse" id="volenaExpand">
+                        <div class="card card-body">
+                            <a href="https://www.youtube.com/watch?v=3RvHaUFK8mo" target="_blank" title="Volena on YouTube"><button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#volenaExpand" aria-expanded="false" aria-controls="volenaExpand">
+                                <i class="bi bi-youtube"></i> YouTube</span>
+                            </button></a>
+                            <a href="https://www.instagram.com/volenaband/" target="_blank" title="Volena on Instagram"><button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#volenaExpand" aria-expanded="false" aria-controls="volenaExpand">
+                                <i class="bi bi-instagram"></i> Instagram</span>
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solo -->
+                <div class="category">
+                    <div class="item">
+                        <div class="category-icon">
+                            <i class="bi bi-music-note-beamed"></i>
+                        </div> 
+                        <button class="btn btn-expand" type="button" data-bs-toggle="collapse" data-bs-target="#soloExpand" aria-expanded="false" aria-controls="soloExpand">
+                        Solo Work<br><span class="description">odds &amp; ends</span>
+                        </button>
+                    </div>
+                    <div class="collapse" id="soloExpand">
+                        <div class="card card-body">
+                            <a href="https://billygartrell.bandcamp.com/album/tape" target="_blank" title="Billy Gartrell's Tape on Bandcamp"><button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#soloExpand" aria-expanded="false" aria-controls="soloExpand">
+                                <img src="img/bandcamp.svg" height="20px" width="20px"> Live Tape</span>
+                            </button></a>
+                            <a href="https://open.spotify.com/track/3vBN2hT4TaPg59hCY80LN4?si=bdb94aa9b6f84890" target="_blank" title="Volena on Instagram"><button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#soloExpand" aria-expanded="false" aria-controls="soloExpand">
+                                <i class="bi bi-spotify"></i> Keep Me Warm - Single</span>
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="section">
+                <h3>~*~*~~*~&nbsp;&nbsp;web&nbsp;&nbsp;~*~*~*</h3>
+
+                <!-- 2022 Year in Review -->
+                <div class="item">
+                    <div class="category-icon">
+                        <i class="bi bi-pen-fill"></i>
+                    </div>
+                    <a href="2022-review.html" target="_blank" title="Billy's 2022 Year in Review"><button type="button" class="btn btn-primary">2022 Year in Review</button></a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>~*~*~~*~&nbsp;&nbsp;visual art&nbsp;&nbsp;~*~*~*</h3>
+
+                <!-- Illustration -->
+                <div class="item">
+                    <div class="category-icon">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <a href="illustration.html" target="_blank" title="Billy's Illustrations"><button type="button" class="btn btn-primary">Illustration</button></a>
+                </div>
+             </div>  
+
+        </div>
     </div>
     
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="js/lazyload.js"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
+
   </body>
 </html>

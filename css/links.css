@@ -1,18 +1,42 @@
 body{
     font-family: 'Courier New', Courier, monospace; color:#000;
+    text-align:center;
 }
 
-.container{
-    max-width:375px;
-}
-
-p{
+p, h1, h2, h3, h4, h5{
     margin:0;
     padding:0;
 }
 
-a {
-    color:black;
+h1{
+    font-size:24px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+.container{
+    max-width:375px;
+    display:flex;
+    flex-direction: column;
+    gap:32px;
+}
+
+#links{
+    display:flex;
+    flex-direction: column;
+    gap:64px;
+}
+
+.section{
+    display:flex;
+    flex-direction: column;
+    gap:32px;
 }
 
 a:visited{
@@ -20,35 +44,49 @@ a:visited{
 }
 
 .divider{
-    border-top:1px dashed black; 
+    /* border-top:1px dashed black;  */
     border-bottom:1px dashed black; 
-    margin-bottom:48px;
+    padding:10px;
 }
 
-.divider p{
-    margin:20px 0px;
-}
-
-
-.intro-info{
-    margin-bottom: 32px;
-    text-align: center; 
-}
-
-#links{
-    text-align:center;
-}
-
-#links button {
+.btn{
     width:100%;
     background-color:#fff;
-    padding:12px 0px;
-    border:0;
+    color:black;
+    border:1px solid black;
+    border-radius:0;
+    height:80px;
 }
 
+.btn:hover{
+    background-color:#000;
+    color:#fff;
+}
 
-.descriptor {
+.btn-expand{
+    border:1px dashed black;
+}
+
+.btn-secondary{
+    height:50px;
+}
+
+.card-body{
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+    border:1px solid black;
+    border-radius: 0;
+}
+
+.description {
     font-size:12px;
+}
+
+.category{
+    margin:0;
+    padding:0;
+    position:relative;
 }
 
 .category-icon {
@@ -64,27 +102,9 @@ a:visited{
 
 .item{
     position:relative;
-    border:1px solid black; margin-bottom:32px;
 }
 
 .icon-bandcamp {
     background-image: url("img/bandcamp.svg");
     background-position: center center;
-}
-
-.link-info{
-    padding:20px;
-    color:black;
-}
-
-.link-info:hover{
-    color:black;
-}
-
-.link-border{
-    border-right:1px solid black;
-}
-
-.link-group{
-    border-top:1px solid black;
 }

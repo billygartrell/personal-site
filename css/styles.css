@@ -25,7 +25,7 @@ h2{
 }
 
 #project-container .row{
-    margin-bottom:50px;
+    /* margin-bottom:50px; */
 }
 
 #header{
@@ -55,6 +55,10 @@ h2{
 
 .col img {
     vertical-align: middle;;
+}
+
+.row{
+    margin-bottom:30px;
 }
 
 /* --------------------------------------------------------------------*/

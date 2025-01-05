@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movies - 2024 Year In Review</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="../css/2024.css" rel="stylesheet">
+
+    <!-- Handbars Inclusion / Template -->
+    <script src="../js/vendor/handlebars-v4.7.6.js"></script>
+    <script id="movie-template" type="text/x-handlebars-template">
+      {{#each info}}
+      <!-- Entry -->
+      <tr>
+        <td>{{number}}</td>
+        <td class="td-title">{{title}}<span class="detail"><br class="d-lg d-xl-none">{{director}} ({{year}})</span></td>
+        <td><span class="tag {{status}}">{{status}}</span></td>
+        <td><span class="tag green-filter"><img src="../img/2023/{{genre}}-icon.svg"> {{genre}}</span></td>
+        <td><img class="rating green-filter" src="../img/2023/{{star}}.svg"><span class="mobile-rating">{{star}} <img style="" class="" src="../img/2023/star.svg"></span></td>
+      </tr>
+      <tr>
+        <td class="description" colspan="5">{{comment}}</td>
+      </tr>
+      {{/each}}
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L941PEQFK3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-L941PEQFK3');
+    </script>
+    
+  </head>
+  
+  <body>
+    <!-- Navigation -->
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> <img src="../img/logo-house.png" width="35px"> Navigation</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a href="intro.html" class="nav-item home">Intro</a>
+          <a href="books.html" class="nav-item red-inverse ">Books</a>
+          <!-- <a href="bread.html" class="nav-item orange-inverse">Bread</a> -->
+          <a href="concerts.html" class="nav-item yellow-inverse">Concerts</a>
+          <a href="restaurants.html" class="nav-item lime-inverse">Food</a>
+          <a href="movies.html" class="nav-item green selected">Movies</a>
+          <a href="music.html" class="nav-item blue-inverse">Music</a>
+          <!-- <a href="running.html" class="nav-item indigo-inverse">Running</a> -->
+          <a href="series.html" class="nav-item violet-inverse">Series</a>
+        </div>
+      </nav>
+    </div> 
+
+    <!-- Header -->
+    <div class="container">
+      <div class="header px-md-5">
+        <img class="img-fluid  d-md-block d-none" src="../img/2024/movies-hero.jpg">
+        <img class="img-fluid  d-md-none d-sm-block" src="../img/2024/movies-hero-mobile.jpg">
+      </div>
+    </div>
+
+    <!-- Thoughts -->
+    <!-- <div class="container thoughts green-inverse pe-lg-5 py-5 px-5">
+      <div class="row">
+        <div class="col-12">
+          <h3>Thoughts</h3>
+          <p>Wow, I watched a lot more movies than I thought this year. I shifted a lot of my ‘hang out on the couch and relax time’ from watching tv shows to watching movies. And honestly, it’s the right move for me. They're shorter and more digestable. Less fluff.</p>
+          <h4>Seasonality</h4>
+          <p>Laura and I changed what we watched depending on the season. Perhaps we were inspired from our friends Corey and Lauren who watched a movie all 31 days during October. We wound up doing something similar. This year, fall was perfect. We went apple picking, we cooked good soups, had some pumpking spice lattes, went to the Renaissance Faire and capped most of our nights with classic halloween movies. It made me appreciate the season. I never really considered the mood-setting capabilities of film before this year. It felt exclusive to Christmas movies to me in the past.</p>
+          <h4>Connected Art</h4>
+          Last year, I noted that I wanted to watch films from my favorite directors. As the year was closing, I realized that I hadn’t done this. So, I started to crank through Danny Boyle films. It was so much fun. It’s great seeing an artist's vision come to life. When I find a band I love, I’ll get into a record and then start to dive through their back catalogue. And now, I feel that equivalent for film. Seeing how an director circles themes, explores stories and grows over time is wonderful. And it’s inspiring for my own work even if I have no interest in making a film in my life. Not only is there an interconnectedness among their own work, but across the dicipline and other media. Here's an example of how I noticed the interconnectitity this year: I was reading Murakami. I wanted to find other artists who do work like him. I read an article about directors who were inspired by Murakami. I found the Chinese director, Wong Kar Wai. I watched his movie Fallen Angels. I read another article about how Sophia Coppola was inspired by his work. I watcher her film Lost in Translation. I got to follow a thread from a different art form into film and see how all of this work is interconnected.<br><br>
+          I watched a lot of classics this year, too! I don’t need to write any more words about this but film was one of my favorite things I explored this year. It’s my second favorite art form behind music. Confirmed.</p>
+        </div>
+      </div>
+    </div> -->
+    
+    <!-- Stats -->
+    <div class="container green-inverse table-container">
+      <table class="table highlight-table">
+        <tbody>
+          <tr>
+            <td class="highlight"><span id="numberOfItemsContainer" class="highlight-number"></span><br>Movies Total</td>
+            <td class="highlight"><span class="highlight-number">Drama</span><br>Top Genre</td>
+            <td class="highlight"><span class="highlight-number">30</span><br>NEW</td>
+            <td class="highlight"><span class="highlight-number">23</span><br>Rewatches</td>
+          </tr>
+        </tbody>
+      </table>
+    
+
+      <!-- Table -->
+      <div class="table-responsive">
+        <table class="table">
+          <thead class="table green">
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Genre</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+
+          <tbody id="movie-list" class="green-inverse">
+          </tbody>
+      
+        </table>  
+      </div>
+    </div>
+      
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Handlebars Template Handling -->
+    <script src="../js/movies-2024.js" type="text/javascript"></script>
+    <script src="../js/moviesTemplateScript.js" type="text/javascript"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Series - 2024 Year In Review</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="../css/2024.css" rel="stylesheet">
+
+    <!-- Handbars Inclusion / Template -->
+    <script src="../js/vendor/handlebars-v4.7.6.js"></script>
+    <script id="series-template" type="text/x-handlebars-template">
+      {{#each info}}
+      <!-- Entry -->
+      <tr>
+        <td>{{number}}</td>
+        <td class="td-title">{{title}}<span class="detail"><br class="d-lg d-xl-none">{{season}}</span></td>
+        <td><span class="tag {{status}}">{{status}}</span></td>
+        <td><span class="tag violet-filter"><img src="../img/2023/{{genre}}-icon.svg"> {{genre}}</span></td>
+        <td><img class="rating violet-filter" src="../img/2023/{{star}}.svg"><span class="mobile-rating">{{star}} <img class="" src="../img/2023/star.svg"></span></td>
+      </tr>
+      <tr>
+        <td class="description" colspan="5">{{comment}}</td>
+      </tr>
+      {{/each}}
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L941PEQFK3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-L941PEQFK3');
+    </script>
+    
+  </head>
+  
+  <body>
+    <!-- Navigation -->
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> <img src="../img/logo-house.png" width="35px"> Navigation</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a href="intro.html" class="nav-item home">Intro</a>
+          <a href="books.html" class="nav-item red-inverse ">Books</a>
+          <!-- <a href="bread.html" class="nav-item orange-inverse">Bread</a> -->
+          <a href="concerts.html" class="nav-item yellow-inverse">Concerts</a>
+          <a href="restaurants.html" class="nav-item lime-inverse">Food</a>
+          <a href="movies.html" class="nav-item green-inverse">Movies</a>
+          <a href="music.html" class="nav-item blue-inverse">Music</a>
+          <!-- <a href="running.html" class="nav-item indigo0inverse">Running</a> -->
+          <a href="series.html" class="nav-item violet selected">Series</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <div class="container">
+      <div class="header px-md-5">
+        <img class="img-fluid  d-md-block d-none" src="../img/2024/series-hero.jpg">
+        <img class="img-fluid  d-md-none d-sm-block" src="../img/2024/series-hero-mobile.jpg">
+      </div>
+    </div>
+
+    <!-- Thoughts -->
+    <!-- <div class="container thoughts violet-inverse pe-lg-5 py-5 px-5">
+      <div class="row">
+        <div class="col-12">
+          <h3>Thoughts</h3>
+          <p>I watched so much less TV this year and I’m so glad. I’m so used to putting on a show during dinner and then getting sucked in for a few hours after work. I'm glad. I'd rather fill that time with watching a movie, playing music, reading a book, working on a project. Just about anything else.<br><br> This year was all about Beef and The Bear. I love a goddamn drama with humor. Give it to me. Let’s get weird and explore humanity and then be funny about it. No more notes this year.</p>
+        </div>
+      </div>
+    </div> -->
+    
+    <!-- Stats -->
+    <div class="container violet-inverse table-container">
+      <table class="table highlight-table">
+        <tbody>
+          <tr>
+            <td class="highlight"><span id="numberOfItemsContainer" class="highlight-number"></span><br>Series Total</td>
+            <td class="highlight"><span class="highlight-number">Drama</span><br>Top Genre</td>
+            <td class="highlight"><span class="highlight-number">10</span><br>New</td>
+            <td class="highlight"><span class="highlight-number">1</span><br>Rewatches</td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <div class="table-responsive">
+      <!-- Table -->
+        <table class="table">
+          <thead class="table violet">
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Genre</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+
+          <tbody id="series-list" class="violet-inverse">
+          </tbody>
+      
+        </table>
+      </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Handlebars Template Handling -->
+    <script src="../js/series-2024.js" type="text/javascript"></script>
+    <script src="../js/seriesTemplateScript.js" type="text/javascript"></script>
+    
+  </body>
+</html>

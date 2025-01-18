@@ -33,7 +33,13 @@ a:hover{
     font-size:14px;
 }
 
+.post-link{
+    font-weight:400;
+}
 
+.site-nav {
+    line-height: 85px;
+}
 
 
 @media (min-width: 576px) { 
@@ -44,24 +50,15 @@ a:hover{
 
     .post-title{
         font-size:30px;
-        font-weight:700;
     }
  }
 
  @media (min-width: 768px) { 
-
-    .site-nav {
-        line-height: 85px;
+ 
+    
+    .site-header{
+        border:0;
     }
-    
-    
-    .post-link{
-        font-weight:400;
-    }
-    
-    
-    
-    
     
     .post-content{
         font-family: 'Benne',serif;
@@ -75,6 +72,14 @@ a:hover{
     .footer-col-wrapper{
         display:block;
         color:inherit;
+    }
+
+    .col{
+        width:50%;
+    }
+
+    .project-item{
+        padding:30px;
     }
     
     .footer-col{

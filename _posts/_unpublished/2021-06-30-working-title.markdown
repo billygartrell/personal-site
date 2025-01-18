@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Welcome Back To Blogging"
+date:   2021-06-20 12:50:15 -0400
+categories: jekyll update
+---
+
+Well here we are again. What is it that I'm trying to say? What do I want to put in my little digital archive? Why do I want to put something on a little digital archive? I've realized recently that I might be a digital conservative. Not a conservative in that I think abortion is bad and I believe in state politics, and a million other absolutely ridiculous concepts. I mean conservative in that I wish things were the way they used to be. I've always wanted to avoid being the 'old man yelling at a cloud' trope, but I feel like I'm now old enough, and dare I say, wise enough to have opinions about this. I think conservatism is generally bad. I think that relying on the past too much can be extremely unrealistic and dangerous. We need to continue to move forward with values that can be rooted in tradition, but also fit into the new world that we are creating. It needs to fit into the current and future present. What's an example of something that is rooted in deep tradtion but feels good on the Internet right now? Something that we've all benefitted from. Let's get something else out of the way: I love technology and for most of my life have seen it as a force of unparralled good. I think this was probably instilled in me by my dad (thanks dad, what's up?). He showed me how to play games, how we can use the Internet to connect with others. There was a pure joy to being able to communicate to others. The moments of connecting with strangers and bonding with them on the internet have forever shaped me. They lead me into being a part of the tech world, to being a designer - a career that I try to use to create things that we can use together on the Internet. I feel deeply connected to it, as I'm sure you do too.
+
+However, obviously, things have changed in the past few years. The Internet isn't exactly what it used to be. It has turned into an attention grabbing, addictive, machine. There's a line in the new Bo Burnham special 'Inside' that has really stuck with me. There's a song called "Welcome To The Internet" that describes the absolutely chaotic nature of the way that we are fed information, can find horrible, incredible, and intense things. Really, it's a commentary on humanity and how disgusting we can be and how the internet is a direct portal to it. "Here's a tip for straingin pasta/here's a nine year old who died". The Internet has given us incredible abilities to learn to access any information, all of the time. In the bridge of the song, the perspective changes and he starts talking directly to a child who grew up with the internet and how we're essentially destroying their lives. For me, the climax of the song is perhaps one of the most quiet, "and it did everything that we designed it to do". 
+
+We did this. Everything you hate about the internet is because someone designed it that way. Your'e welcome. Someone just like me. Someone who is just trying to get their money and, honestly it was probably a fun design challenging to figure out, full of data, full of wonderful data.
+
+This leads me to my digital conservatism, right? Like on one hand, there's absoltuely no way I'd every live without Zoom now that we have it. It's an incredible tool. However, there are parts of what were doing that are unquestionably bad. [I'd like to do some research about anxiety levels, and any correlations that come direcly from internet usage. Maybe that article about TikTok influencers.]
+
+
+1. Non-optimized
+Things I don't want:
+- Gmail word suggestions. I can write a goddamn sentence myself, thanks. I think that sentence building can be really helpful 
